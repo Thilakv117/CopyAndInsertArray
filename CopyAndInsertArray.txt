@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    int[] Num = { 1 , 2 , 3 , 4};
+    System.out.print("Enter the Num: ");
+    int Nums = sc.nextInt();
+    int[] NewNum = Arrays.copyOf(Num , Num.length+ 1);
+    NewNum[NewNum.length - 1] = Nums;
+    System.out.println(" Copy Array : " + Arrays.toString(NewNum));
+  }
+}
